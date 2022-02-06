@@ -25,7 +25,7 @@
     border: 1px solid white;
 }
 
-.btn{
+.btnn{
     border-radius: 10px;
     border: none;
     margin: 2px;
@@ -37,7 +37,7 @@
     color: white;
 }
 
-.btn:hover{
+.btnn:hover{
     background-color: black;
 }
 
