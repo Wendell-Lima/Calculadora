@@ -22,20 +22,22 @@
     border-radius: 20px;
     padding: 15px;
     color: white;
+    border: 1px solid white;
 }
 
-.buttom {
+.btn {
+    border-radius: 10px;
+    border: none;
     margin: 2px;
     width: 50px;
     height: 50px;
     font-size: 25px;
     cursor: pointer;
-    border: none;
     background-color: rgb(31,31,31);
     color: white;
 }
 
-.buttom:hover{
+.btn:hover{
     background-color: black;
 }
 
@@ -48,9 +50,15 @@
     font-size: 25px;
     text-align: right;
     color: black;
+    word-wrap: break-word;
 }
+
 
 #igual {
     height:106px;
     background-color: rgba(0, 0, 255, 0.555);
+}
+
+#igual:hover {
+    background-color: rgba(0, 0, 158, 0.555);;
 }
