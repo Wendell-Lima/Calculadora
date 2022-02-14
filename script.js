@@ -1,23 +1,25 @@
-function insert(numero) {
-    var num = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = num + numero;
+function inserir(num){
+    document.form.visor.value += num;
 }
 
-function clean() {
-    document.getElementById('resultado').innerHTML = "";
-}
+function calcular(){
+    var valor = document.form.visor.value;
 
-function back() {
-    var resultado = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1 )
-}
-
-function calcular() {
-    var resultado = document.getElementById('resultado').innerHTML;
-    if(resultado){
-        document.getElementById('resultado').innerHTML = eval(resultado);
+    if(valor){
+        document.form.visor.value = eval(valor);
     }
     else{
-        document.getElementById('resultado').innerHTML = "Nada para calcular.";
+        /*document.form.visor.value ACHAR SOLUÇÃO! */ 
+        setInterval(limpar(),5000) //tempo dado em milesimos 1 seg = 1000 milésimos
     }
+}
+
+function limpar(){
+    document.form.visor.value = "";
+}
+
+function backspace(){
+    var valor = document.form.visor.value;
+
+    document.form.visor.value = valor.substring(0, valor.length-1)
 }
